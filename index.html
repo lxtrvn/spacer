@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=400 height=700 tabindex="-1" style="width: 400px; height: 700px; background: #CCCCCC"></canvas>
-    <script src="Build/spacer2.loader.js"></script>
+    <script src="Build/spacy.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/spacer2.data.br",
-        frameworkUrl: "Build/spacer2.framework.js.br",
-        codeUrl: "Build/spacer2.wasm.br",
+        dataUrl: "Build/spacy.data.unityweb",
+        frameworkUrl: "Build/spacy.framework.js.unityweb",
+        codeUrl: "Build/spacy.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "huket",
         productName: "addifiere",
